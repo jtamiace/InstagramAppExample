@@ -33,7 +33,6 @@ app.post('/delete', index.deleteImage);
 app.post('hashtag', hashtag.getHashtag);
 //set environment ports and start application
 app.set('port', process.env.PORT || 3000);
-app.use(express.bodyParser());
 app.use(express.static(path.join(_dirname, 'public')));
 http.createServer(app).listen(app.get('port'), function(){
 	console.log('Express server listening on port ' + app.get('port'));
