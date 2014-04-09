@@ -6,8 +6,10 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "dotenv": "*",
     "express": "3.x",
     "express3-handlebars": "*",
+    "instagram-node-lib": "*",
     "mongodb": "*",
     "mongoose": "*",
     "passport": "*",
